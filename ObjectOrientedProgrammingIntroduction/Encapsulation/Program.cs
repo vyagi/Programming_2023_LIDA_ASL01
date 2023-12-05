@@ -23,19 +23,58 @@ namespace Encapsulation
             _lastName = lastName;
             _age = age;
         }
+
+        public string Name
+        {
+            get => _name;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentNullException("Name is required");
+
+                _name = value;
+            }
+        }
+
+        public string LastName => _lastName;
+
+        public int Age => _age;
+
+        public bool IsAdult => _age >= 18;
+
+        public string FullName
+        {
+            get => $"{Name} {LastName}";
+            set
+            {
+               //Home work
+
+            }
+        }
     }
+        //Java approach (don't do it in C#)
+        //    public string GetName()
+        //    {
+        //        return _name;
+        //    }
+
+        //    public void SetName(string newName)
+        //    {
+        //        if (string.IsNullOrWhiteSpace(newName))
+        //            throw new ArgumentNullException("Name is required");
+
+        //        _name = newName;
+        //    }
 
     class Program
     {
         static void Main(string[] args)
         {
             var s = new Student("James", "Bond", 40);
-            Console.WriteLine($"{s.name} {s.lastName} is {s.age}.");
+            Console.WriteLine($"{s.Name} {s.LastName} is {s.Age}.");
 
-            s.age = -10;
-            s.name = null;
-            s.lastName = "   ";
-            Console.WriteLine($"{s.name} {s.lastName} is {s.age}.");
+            s.FullName = "Jorge Smith";
+            Console.WriteLine($"{s.FullName} is {s.Age}, {s.IsAdult}");
         }
     }
 }
