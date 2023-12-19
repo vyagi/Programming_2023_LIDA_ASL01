@@ -11,8 +11,7 @@ namespace OOPRemainingConcepts
     {
         public abstract void MakeSound();
     }
-
-    class Dog : Animal, IPet
+    public class Dog : Animal, IPet
     {
         public override void MakeSound()
         {

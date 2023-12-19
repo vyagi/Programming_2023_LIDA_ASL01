@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPRemainingConcepts", "OOP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesAndStructs", "ClassesAndStructs\ClassesAndStructs.csproj", "{1587BB9D-4D97-40AE-B033-B18EE2FA599C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsIntroduction", "GenericsIntroduction\GenericsIntroduction.csproj", "{32E4F31B-AA7D-4DC1-B59B-9843441B259E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{FB92D07B-D2EB-48EE-88E3-ED6BA4580494}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{1587BB9D-4D97-40AE-B033-B18EE2FA599C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1587BB9D-4D97-40AE-B033-B18EE2FA599C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1587BB9D-4D97-40AE-B033-B18EE2FA599C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E4F31B-AA7D-4DC1-B59B-9843441B259E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E4F31B-AA7D-4DC1-B59B-9843441B259E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E4F31B-AA7D-4DC1-B59B-9843441B259E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E4F31B-AA7D-4DC1-B59B-9843441B259E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB92D07B-D2EB-48EE-88E3-ED6BA4580494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB92D07B-D2EB-48EE-88E3-ED6BA4580494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB92D07B-D2EB-48EE-88E3-ED6BA4580494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB92D07B-D2EB-48EE-88E3-ED6BA4580494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
