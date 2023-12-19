@@ -2,27 +2,50 @@
 
 namespace OOPRemainingConcepts
 {
-    public class Animal
+    public interface IPet
     {
-        public virtual void MakeSound()
-        {
-            Console.WriteLine("Unspecified sound....");
-        }
+        void Play();
     }
 
-    class Dog : Animal
+    public abstract class Animal
+    {
+        public abstract void MakeSound();
+    }
+
+    class Dog : Animal, IPet
     {
         public override void MakeSound()
         {
             Console.WriteLine("Hau hau");
         }
+
+        public void Play()
+        {
+            MakeSound();
+            MakeSound();
+            MakeSound();
+        }
     }
 
-    class Cat : Animal
+    class Cat : Animal, IPet
     {
         public override void MakeSound()
         {
             Console.WriteLine("Miau miau");
+        }
+
+        public void Play()
+        {
+            MakeSound();
+            MakeSound();
+        }
+    }
+
+    class Donkey : Animal
+    {
+        public override void MakeSound()
+        {
+            Console.WriteLine("Ihaaa Ihaaa");
         }
     }
 
@@ -36,7 +59,8 @@ namespace OOPRemainingConcepts
             var c = new Cat();
             c.MakeSound();
 
-            ProduceSounds(new Animal[] { d, c, new Dog(), new Cat() });
+            ProduceSounds(new Animal[] { d, c, new Dog(), new Cat(), new Donkey() });
+            PlayWithPets(new IPet[] { d, c, new Dog() });
         }
 
         static void ProduceSounds(Animal[] animals)
@@ -44,6 +68,14 @@ namespace OOPRemainingConcepts
             foreach (var animal in animals)
             {
                 animal.MakeSound();
+            }
+        }
+
+        static void PlayWithPets(IPet[] pets)
+        {
+            foreach (var pet in pets)
+            {
+                pet.Play();
             }
         }
     }
