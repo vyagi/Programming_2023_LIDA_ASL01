@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqBasic", "LinqBasic\Linq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPRemainingConcepts", "OOPRemainingConcepts\OOPRemainingConcepts.csproj", "{BB98F23F-1FCC-4842-972A-90418E69A509}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesAndStructs", "ClassesAndStructs\ClassesAndStructs.csproj", "{1587BB9D-4D97-40AE-B033-B18EE2FA599C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BB98F23F-1FCC-4842-972A-90418E69A509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB98F23F-1FCC-4842-972A-90418E69A509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB98F23F-1FCC-4842-972A-90418E69A509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1587BB9D-4D97-40AE-B033-B18EE2FA599C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1587BB9D-4D97-40AE-B033-B18EE2FA599C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1587BB9D-4D97-40AE-B033-B18EE2FA599C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1587BB9D-4D97-40AE-B033-B18EE2FA599C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
